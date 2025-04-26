@@ -626,6 +626,7 @@ footer {
   stroke: rgba(0, 0, 0, 0.1);
   outline: none;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 .icon-close {
   fill: #131ccd;
@@ -641,6 +642,7 @@ footer {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+  padding-top: 72px;
 }
 .label-modal {
   font-weight: 400;
@@ -650,8 +652,25 @@ footer {
   color: #8e8f99;
 }
 .model-input {
-  border: 1px solid var(--iris);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
+}
+.icon-form-modal {
+  fill: #2e2f42;
+  position: absolute;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textarea-moodal {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+}
+.textarea-moodal::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
