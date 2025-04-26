@@ -614,6 +614,11 @@ footer {
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%) scale(1.5);
 }
+.form-modal {
+}
+.container-label {
+  margin-bottom: 8px;
+}
 .modal-button {
   position: absolute;
   top: 24px;
@@ -628,12 +633,21 @@ footer {
   margin-bottom: 24px;
   cursor: pointer;
 }
+.modal-button:hover {
+  background-color: #404bbf;
+  border: 0;
+}
+.modal-button:hover :first-child {
+  fill: #ffffff;
+}
+
 .icon-close {
-  fill: #131ccd;
+  fill: #2e2f42;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .modal-text {
   font-weight: 500;
   font-size: 16px;
@@ -651,16 +665,29 @@ footer {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.container-icon {
+  position: relative;
+}
 .model-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  width: 100%;
   height: 40px;
+  padding-left: 38px;
 }
+.model-input:focus {
+  border-color: #4d5ae5;
+  color: #4d5ae5;
+}
+.model-input:focus + .icon-form-modal {
+  fill: #4d5ae5;
+}
+
 .icon-form-modal {
   fill: #2e2f42;
   position: absolute;
-
+  top: 11px;
+  left: 16px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -670,7 +697,31 @@ footer {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
+  resize: none;
+  padding: 8px 16px;
+  width: 100%;
+  height: 120px;
 }
-.textarea-moodal::placeholder {
+.textarea-moodal ::placeholder {
   color: rgba(46, 47, 66, 0.4);
+}
+.real-checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: #ffffff;
+  margin-right: 8px;
 }
