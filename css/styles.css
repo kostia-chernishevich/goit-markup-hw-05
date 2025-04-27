@@ -614,7 +614,16 @@ footer {
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%) scale(1.5);
 }
+.form-container-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .form-modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
 }
 .container-label {
   margin-bottom: 8px;
@@ -665,10 +674,13 @@ footer {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.container-comment {
+  margin-bottom: 16px;
+}
 .container-icon {
   position: relative;
 }
-.model-input {
+.modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
@@ -705,6 +717,18 @@ footer {
 .textarea-moodal ::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
+.container-checkbox {
+  margin-bottom: 24px;
+}
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
 .real-checkbox {
   position: absolute;
   white-space: nowrap;
@@ -718,10 +742,29 @@ footer {
   margin: -1px;
 }
 .custom-checkbox {
-  width: 16px;
-  height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: #ffffff;
   margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-checkbox:checked {
+  background-color: #404bbf;
+}
+.custom-checkbox:checked :first-child {
+  fill: #f4f4fd;
+}
+.checkbox-icon {
+  fill: transparent;
+}
+.privacy-link {
+  line-height: 1.3;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+  margin-left: 6px;
 }
