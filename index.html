@@ -478,25 +478,21 @@
         <div class="container-footer-subscribe">
           <p class="text-footer-email">Subscribe</p>
           <form name="subscribe-form" class="form-footer">
-              <label for="email" class="footer-form-label">
-                <input
-                  name="subscribe-email"
-                  class="footer-form-input-email"
-                  type="email"
-                  placeholder="E-mail"
-                  id="email"
-                />
-              </label>
-              <button
-                type="submit"
-                class="main-button footer-form-email-button"
-              >
-                Subscribe
-                <svg class="icon-button-form" width="24" height="24">
-                  <use href="./images/icons.svg#icon-sendsvg"></use>
-                </svg>
-              </button>
-            
+            <label for="email" class="footer-form-label">
+              <input
+                name="subscribe-email"
+                class="footer-form-input-email"
+                type="email"
+                placeholder="E-mail"
+                id="email"
+              />
+            </label>
+            <button type="submit" class="main-button footer-form-email-button">
+              Subscribe
+              <svg class="icon-button-form" width="24" height="24">
+                <use href="./images/icons.svg#icon-sendsvg"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -510,13 +506,14 @@
           </svg>
         </button>
         <div class="form-container-modal">
-         <p class="modal-text">Leave your contacts and we will call you back</p>
+          <p class="modal-text">
+            Leave your contacts and we will call you back
+          </p>
           <form name="form_modal" class="form-modal">
-            
             <div class="container-label">
               <label for="user-name" class="label-modal">
                 Name
-                <div class="container-icon">
+                <span class="container-icon">
                   <input
                     type="text"
                     id="user-name"
@@ -526,13 +523,13 @@
                   <svg class="icon-form-modal" width="18" height="24">
                     <use href="./images/icons.svg#icon-personsvg"></use>
                   </svg>
-                </div>
+                </span>
               </label>
             </div>
             <div class="container-label">
               <label for="user-tel" class="label-modal">
                 Phone
-                <div class="container-icon">
+                <span class="container-icon">
                   <input
                     type="tel"
                     id="user-tel"
@@ -542,13 +539,13 @@
                   <svg class="icon-form-modal" width="18" height="24">
                     <use href="./images/icons.svg#icon-phonesvg"></use>
                   </svg>
-                </div>
+                </span>
               </label>
             </div>
             <div class="container-label">
               <label for="user-email" class="label-modal">
                 Email
-                <div class="container-icon">
+                <span class="container-icon">
                   <input
                     type="email"
                     id="user-email"
@@ -558,40 +555,46 @@
                   <svg class="icon-form-modal" width="18" height="24">
                     <use href="./images/icons.svg#icon-emailsvg"></use>
                   </svg>
-                </div>
+                </span>
               </label>
             </div>
-          
-              <div class="container-comment">
-                <label for=" user-comment" class="label-modal">
-              Comment
-                <div class="container-textarea">
+            <div class="container-comment">
+              <label for="user-comment" class="label-modal">
+                Comment
+                <span class="container-textarea">
                   <textarea
-                   name="user-comment"
-                    id=" user-comment"
+                    name="user-comment"
+                    id="user-comment"
                     class="textarea-modal"
                     placeholder="Text input"
                   >
                   </textarea>
-                </div>
-              </div>
-               <div class="container-checkbox">
-                 <input type="checkbox" class="real-checkbox" value="true" id="user-privacy" name="user-privacy" />
-                  <label for="user-privacy" class="label-checkbox">
-          
-                  <span class="custom-checkbox">
-                    <svg class="checkbox-icon" width="10" height="8">
-                      <use href="./images/icons.svg#icon-checkedsvg"></use>
-                    </svg> </span>I accept
-                  the terms and conditions of the
-                  <a href="#" class="privacy-link">Privacy Policy</a>
-                 </label>
-               </div>
-              <div>
-                <button type="submit" class="button-send main-button">Send</button>
-              </div>
-            </label>
-            
+                </span>
+              </label>
+            </div>
+
+            <div class="container-checkbox">
+              <input
+                type="checkbox"
+                class="real-checkbox"
+                value="true"
+                id="user-privacy"
+                name="user-privacy"
+              />
+              <label for="user-privacy" class="label-checkbox">
+                <span class="custom-checkbox">
+                  <svg class="checkbox-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-checkedsvg"></use>
+                  </svg> </span
+                >I accept the terms and conditions of the
+                <a href="#" class="privacy-link">Privacy Policy</a>
+              </label>
+            </div>
+            <div>
+              <button type="submit" class="button-send main-button">
+                Send
+              </button>
+            </div>
           </form>
         </div>
       </div>
