@@ -729,7 +729,7 @@ footer {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-input:focus {
+.modal-input:focus {
   border-color: #4d5ae5;
 }
 .icon-form-modal {
@@ -740,7 +740,7 @@ footer {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-input:focus + .icon-form-modal {
+.modal-input:focus + .icon-form-modal {
   fill: #4d5ae5;
 }
 .container-comment {
@@ -806,6 +806,11 @@ footer {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+}
+.real-checkbox:checked + .label-checkbox .custom-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .custom-checkbox:checked {
   background-color: #404bbf;
