@@ -550,21 +550,19 @@
             </div>
           </div>
           <div class="container-comment">
-            <label for="user-comment" class="label-modal"> Comment</label>
-            <div class="container-textarea">
-              <textarea
-                name="user-comment"
-                id="user-comment"
-                class="textarea-modal"
-                placeholder="Text input"
-              >
-              </textarea>
-            </div>
+            <label for="user-comment" class="label-modal">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="textarea-modal"
+              placeholder="Text input"
+            >
+            </textarea>
           </div>
           <div class="container-checkbox">
             <input
               type="checkbox"
-              class="real-checkbox"
+              class="visually-hidden"
               value="true"
               id="user-privacy"
               name="user-privacy"
@@ -578,9 +576,7 @@
               <a href="#" class="privacy-link">Privacy Policy</a>
             </label>
           </div>
-          <div>
-            <button type="submit" class="button-send main-button">Send</button>
-          </div>
+          <button type="submit" class="button-send main-button">Send</button>
         </form>
       </div>
     </div>
