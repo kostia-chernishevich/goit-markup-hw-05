@@ -810,7 +810,11 @@ footer {
   border: none;
   fill: #f4f4fd;
 }
-
+.custom-checkbox:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
 .privacy-link {
   line-height: 1.3;
   text-decoration: underline;
